@@ -22,5 +22,5 @@ Indexes:
 permalinks:
   post: /blog/:year/:month/:day/:title/
 
-MetadataFormat: "yaml"
+MetadataFormat: "toml"
 

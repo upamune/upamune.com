@@ -1,0 +1,26 @@
+BaseUrl: "http://upamune.com/"
+LanguageCode: "ja-jp"
+Title: "人権を得たいゴミ"
+
+Params:
+  Author: "Masato Yamamoto"
+  Birth: "Thu, Nov 30, 1995"
+  DateForm: "Mon, Jun 29, 2015"
+  GoogleAnalyticsUserID: "UA-64589900-1"
+  GravatarHash: "b14e6e1f73993092840201a50679abd3"
+  Facebook: "upamune"
+  Twitter: "upamune"
+  Github: "upamune"
+  ShowRelatedPost: False
+  Disqus: "upamune"
+  SyntaxHighlightTheme: "solarized_dark.min.css"
+  ShowTagCloud: True
+
+Indexes:
+  tag: "tags"
+
+permalinks:
+  post: /blog/:year/:month/:day/:title/
+
+MetadataFormat: "toml"
+

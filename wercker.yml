@@ -7,6 +7,6 @@ build:
     deploy:
         steps:
             - lukevivier/gh-pages@0.2.1:
-                token: aa4c7b4b800e920a06a1a4676eeef6bde5b21692476f50b2394032fc2e1f014c
+                token: $GIT_TOKEN
                 basedir: public
                 repo: upamune/upamune.github.io

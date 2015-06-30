@@ -5,3 +5,9 @@ build:
       version: "0.14"
       theme: aglaus
       flags: --disableSitemap=true
+deploy:
+  steps:
+    - lukevivier/gh-pages
+      token: $GIT_TOKEN
+      domain: upamune.com
+      basedir: public

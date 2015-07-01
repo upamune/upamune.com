@@ -9,5 +9,6 @@ deploy:
         - lukevivier/gh-pages:
             token: $GIT_TOKEN
             basedir: public
+            domain: blog.upamune.com
             repo: upamune/upamune.github.io
 

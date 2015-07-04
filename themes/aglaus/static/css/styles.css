@@ -111,7 +111,6 @@ a.fixed-link {
     padding: 10px;
     padding-right: 30px;
     width: 120px;
-    height: 120px;
 }
 
 .post aside {
@@ -144,6 +143,7 @@ a.fixed-link {
     float: none;
     text-align: center;
     padding: 0;
+    width: auto;
 }
 
 .post-single>.eyecatch>img {

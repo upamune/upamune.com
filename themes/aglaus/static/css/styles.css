@@ -110,6 +110,8 @@ a.fixed-link {
     float: left;
     padding: 10px;
     padding-right: 30px;
+    width: 120px;
+    height: 120px;
 }
 
 .post aside {

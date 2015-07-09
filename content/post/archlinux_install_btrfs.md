@@ -11,14 +11,14 @@ eyecatch = "archlinux.png"
 [Arch Linux Downloads](https://www.archlinux.org/download/)から最新版のISOをダウンロードしてくる。そしてUSBメモリをさして焼けばいいのだけれど、自分は毎回以下のようにやっている。
 
 ```bash
-lsblk #USBメモリを確認
-dd bs=4M if=archlinux.iso of=/dev/sdX #lsblkで確認したデバイスに焼く
+$ lsblk #USBメモリを確認
+$ dd bs=4M if=archlinux.iso of=/dev/sdX #lsblkで確認したデバイスに焼く
 ```
 
 毎回のように ```dd``` の進捗を確認する方法を検索してしまうのでメモ。
 
 ```bash
-sudo sh -c 'while true; do killall -USR1 dd; sleep 2; done'
+$ sudo sh -c 'while true; do killall -USR1 dd; sleep 2; done'
 ```
 
 こうすると2秒おきに進捗が見れるらしい。べんり。
@@ -86,7 +86,7 @@ ssh接続確認できたら、次に進む。
 ```bash
 NAME             MAJ:MIN  RM  SIZE    RO  TYPE
  sda
- │─sda1            8:0     0  119.2G   0   part
+ │─sda1            8:1     0    512M   0   part
  ├─sda2            8:2     0      1G   0   part
  └─sda3            8:3     0  117.8G   0   part
 ```
@@ -186,7 +186,7 @@ Xfce + SLiM です。
 ## SLiM 導入
 ```bash
 $ yaourt -Sy xorg-server xorg-server-utils xorg-server-xephyr xorg-utils xterm xf86-video-intel slim archlinux-themes-slim slim-themes
-$ vim /etc/slim.conf # login_cmd, daemon の行のコメントアウトを解除して、 themeも変更します
+$ vim /etc/slim.conf # login_cmd, daemon の行のコメントアウトを解除して、 themeも変更
 $ systemctl enable slim.service
 ```
 
@@ -202,12 +202,12 @@ vim ~/.xinitrc # exec startxfce4 と書けば良い
 ### プログラミング言語系
 
 ```bash
-$ yaour -S clang go scala
+$ yaourt -S clang go scala
 ```
 
 ### ツール
 ```bash
-$ yaour -S gimp guake mikutter tig peco xsel tlp the_silver_searcher
+$ yaourt -S gimp guake mikutter tig xsel tlp the_silver_searcher
 ```
 
 ### 開発環境

@@ -1,6 +1,6 @@
 +++
 date = "2015-07-10T00:02:18+09:00"
-draft = true
+draft = false
 title = "ArchLinux をインストールする with Btrfs"
 eyecatch = "archlinux.png"
 
@@ -207,7 +207,7 @@ $ yaourt -S clang go scala
 
 ### ツール
 ```bash
-$ yaourt -S gimp guake mikutter tig xsel tlp the_silver_searcher
+$ yaourt -S chromium dropbox gimp guake mikutter tig xsel tlp tmux the_silver_searcher
 ```
 
 ### 開発環境

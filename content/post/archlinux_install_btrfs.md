@@ -193,8 +193,8 @@ $ systemctl enable slim.service
 ## Xfce 導入
 
 ```bash
-yaourt -S xfce4 xfce4-goodies gamin
-vim ~/.xinitrc # exec startxfce4 と書けば良い
+$ yaourt -S xfce4 xfce4-goodies gamin
+$ vim ~/.xinitrc # exec startxfce4 と書けば良い
 ```
 
 ## インストール後

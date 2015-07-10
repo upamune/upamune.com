@@ -11,6 +11,9 @@
         <img src="{{ .Site.BaseURL }}/images/nopicture.png" alt="no_picture">
         {{ end }}
     </div>
+    <div id="toc">
+      {{ .TableOfContents }}
+    </div>
 
     <div class="post-content">
         {{ .Content }}

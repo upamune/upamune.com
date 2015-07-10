@@ -207,7 +207,19 @@ $ yaourt -S clang go scala
 
 ### ツール
 ```bash
-$ yaourt -S chromium dropbox gimp guake mikutter tig xsel tlp tmux the_silver_searcher
+$ yaourt -S chromium dropbox gimp guake mikutter mercurial tig xsel tlp tp-smapi tpacpi-bat tmux the_silver_searcher unzip wpa_actiond
+```
+
+```wpa_actiond``` をインストールすることで ```netctl-auto``` が入るので、ネットワークに自動接続するように設定する。
+
+```bash
+$ systemctl enable netctl-auto@[INTERFACE].service
+```
+
+さらに ```tlp``` を有効にするためにも設定しておく。
+
+```bash
+systemctl enable tlp.service
 ```
 
 ### 開発環境
@@ -227,6 +239,8 @@ $ yaourt -S ttf-koruri ttf-ricty otf-ipaexfont ttf-symbola
 ```bash
 $ yaourt -S fcitx-qt5 fcitx-im fcitx-configtool fcitx-mozc
 ```
+
+インストール後にFcitx Configuration からMozcを追加する必要がある。
 
 ### テーマ
 

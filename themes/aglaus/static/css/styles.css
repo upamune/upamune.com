@@ -113,6 +113,20 @@ a.fixed-link {
     width: 120px;
 }
 
+/* Table of Contents */
+#toc{
+    border: 1px solid #eee;
+    padding: 8px;
+
+    font-size: small;
+
+    /* box-shadow */
+    box-shadow:rgba(113, 135, 164, 0.0980392) 0px 0px 10px 3px;
+    -webkit-box-shadow:rgba(113, 135, 164, 0.0980392) 0px 0px 10px 3px;
+    -moz-box-shadow:rgba(113, 135, 164, 0.0980392) 0px 0px 10px 3px;
+
+}
+
 .post aside {
     margin-bottom: 30px;
     border: 1px solid #eee;

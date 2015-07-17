@@ -11,9 +11,11 @@
         <img src="{{ .Site.BaseURL }}/images/nopicture.png" alt="no_picture">
         {{ end }}
     </div>
+    {{ if isset .Params "toc" }}
     <div id="toc">
       {{ .TableOfContents }}
     </div>
+    {{ end }}
 
     <div class="post-content">
         {{ .Content }}

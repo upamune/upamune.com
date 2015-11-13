@@ -1,6 +1,6 @@
 +++
 date = "2015-11-13T21:57:54+09:00"
-draft = true
+draft = false
 title = "ES6を学んだ"
 eyecatch = "javascript.png"
 
